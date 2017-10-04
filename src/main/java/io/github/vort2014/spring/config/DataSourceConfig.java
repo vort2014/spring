@@ -1,5 +1,6 @@
 package io.github.vort2014.spring.config;
 
+import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -52,9 +53,4 @@ public class DataSourceConfig {
 //        hikariDataSource.setDriverClassName(AutoloadedDriver.class.getName());
 //        return hikariDataSource;
 //    }
-
-    static {
-        // derby.log location
-//        System.setProperty("derby.system.home", "target");
-    }
 }

@@ -1,7 +1,7 @@
 -- We don't need to create schema SA, because we login as SA
 -- CREATE SCHEMA SA;
 
-CREATE TABLE company (
+CREATE TABLE COMPANY (
   companyId NUMBER,
   companyName VARCHAR2(30) NOT NULL,
   employeeSize NUMBER NOT NULL,
@@ -17,4 +17,4 @@ CREATE TABLE customer (
   customerDate TIMESTAMP NOT NULL,
   companyId NUMBER,
   PRIMARY KEY (customerId),
-  FOREIGN KEY (companyId) REFERENCES company);
+  FOREIGN KEY (companyId) REFERENCES COMPANY (companyId));
