@@ -1,0 +1,13 @@
+
+=== Greeting REST Service
+
+This is an example output for a service running at http://localhost:8080:
+
+.Example request
+include::{snippets}/CustomerControllerImplTest/testSave/http-request.adoc[]
+
+.Example response
+include::{snippets}/CustomerControllerImplTest/testSave/http-response.adoc[]
+
+.Response fields description
+include::{snippets}/CustomerControllerImplTest/testSave/response-fields.adoc[]

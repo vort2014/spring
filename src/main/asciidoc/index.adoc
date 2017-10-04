@@ -1,0 +1,19 @@
+= Index
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+== Resources
+
+include::{baseDir}/README.adoc[]
+include::{sourceDirectory}/controllers/CustomerControllerImpl.adoc[]
+
+As you can see the format is very simple, and in fact you always get the same message.
+
+
+
+
+
