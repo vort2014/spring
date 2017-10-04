@@ -105,9 +105,15 @@
             We don't need to create DataSource been
             https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html
         -->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.derby</groupId>-->
+            <!--<artifactId>derby</artifactId>-->
+        <!--</dependency>-->
+
+        <!-- H2 -->
         <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
         </dependency>
 
         <dependency>

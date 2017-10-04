@@ -1,11 +1,11 @@
 [
   {
-    "customerId": 5000,
+    "customerId": 1,
     "firstName": "John",
     "lastName": "Smith",
     "email": "John.Smith@comcast.net",
     "phone": "555-340-1230",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -14,12 +14,12 @@
     }
   },
   {
-    "customerId": 5001,
+    "customerId": 2,
     "firstName": "Mary",
     "lastName": "Johnson",
     "email": "mary.johnson@comcast.net",
     "phone": "555-123-4567",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -28,12 +28,12 @@
     }
   },
   {
-    "customerId": 5002,
+    "customerId": 3,
     "firstName": "Bob",
     "lastName": "Collins",
     "email": "bob.collins@yahoo.com",
     "phone": "555-012-3456",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -42,12 +42,12 @@
     }
   },
   {
-    "customerId": 5003,
+    "customerId": 4,
     "firstName": "Rebecca",
     "lastName": "Mayer",
     "email": "rebecca.mayer@gmail.com",
     "phone": "555-205-8212",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -56,12 +56,12 @@
     }
   },
   {
-    "customerId": 5004,
+    "customerId": 5,
     "firstName": "Anthony",
     "lastName": "Clark",
     "email": "anthony.clark@gmail.com",
     "phone": "555-256-1901",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -70,12 +70,12 @@
     }
   },
   {
-    "customerId": 5005,
+    "customerId": 6,
     "firstName": "Judy",
     "lastName": "Sousa",
     "email": "judy.sousa@verizon.net",
     "phone": "555-751-1207",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -84,12 +84,12 @@
     }
   },
   {
-    "customerId": 5006,
+    "customerId": 7,
     "firstName": "Christopher",
     "lastName": "Patriquin",
     "email": "patriquinc@yahoo.com",
     "phone": "555-316-1803",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -98,12 +98,12 @@
     }
   },
   {
-    "customerId": 5007,
+    "customerId": 8,
     "firstName": "Deborah",
     "lastName": "Smith",
     "email": "debsmith@comcast.net",
     "phone": "555-256-3421",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -112,12 +112,12 @@
     }
   },
   {
-    "customerId": 5008,
+    "customerId": 9,
     "firstName": "Jennifer",
     "lastName": "McGinn",
     "email": "jmcginn@comcast.net",
     "phone": "555-250-0918",
-    "customerDate": -229559785766,
+    "customerDate": "1962-09-23T03:23:34.234+02:00",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",

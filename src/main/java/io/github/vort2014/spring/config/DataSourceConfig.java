@@ -8,6 +8,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import javax.sql.DataSource;
 
 import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.DERBY;
+import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2;
 
 /**
  * Created by vort on 09.07.2017.
@@ -33,7 +34,8 @@ public class DataSourceConfig {
     @Bean
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
-                .setType(DERBY)
+                .setType(H2)
+                .setName("MODE=Oracle")
                 // see spring.datasource.initialize
                 .addScript("default_schema.sql")
                 .addScript("default_data.sql")

@@ -50,7 +50,6 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 public abstract class ApplicationIT {
 
     protected static String PATH = "{ClassName}/{methodName}";
-    protected static final ObjectMapper objectMapper = new ObjectMapper();
 
 //    @Rule
 //    public JUnitRestDocumentation jUnitRestDocumentation = new JUnitRestDocumentation("target/snippets");
@@ -58,6 +57,8 @@ public abstract class ApplicationIT {
 //    protected WebApplicationContext webApplicationContext;
     @Autowired
     protected MockMvc mockMvc;
+    @Autowired
+    protected ObjectMapper objectMapper;
 
 //    @Before
 //    public void setUp() {

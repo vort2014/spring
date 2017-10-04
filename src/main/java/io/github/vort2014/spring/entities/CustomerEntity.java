@@ -21,7 +21,6 @@ import java.util.Date;
 public class CustomerEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "customerId")
     private int customerId;
     @Column(name = "firstName")
