@@ -1,6 +1,7 @@
 package io.github.vort2014.spring;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
@@ -15,6 +16,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.documentationConfiguration;
@@ -67,4 +72,10 @@ public abstract class ApplicationIT {
 //                .alwaysDo(document(PATH, preprocessResponse(prettyPrint())))  // overrides by concrete test
 //                .build();
 //    }
+
+    protected String getJson(String fileName) throws IOException {
+        try (InputStream inputStream = getClass().getResourceAsStream(fileName)) {
+            return IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+        }
+    }
 }

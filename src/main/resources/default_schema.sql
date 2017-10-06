@@ -15,6 +15,7 @@ CREATE TABLE customer (
   email VARCHAR2(30) NOT NULL,
   phone VARCHAR2(30) NOT NULL,
   customerDate TIMESTAMP NOT NULL,
+--   birthday TIMESTAMP WITH TIME ZONE,
   companyId NUMBER,
   PRIMARY KEY (customerId),
   FOREIGN KEY (companyId) REFERENCES COMPANY (companyId));

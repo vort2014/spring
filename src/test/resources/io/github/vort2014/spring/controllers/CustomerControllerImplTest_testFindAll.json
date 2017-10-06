@@ -5,7 +5,7 @@
     "lastName": "Smith",
     "email": "John.Smith@comcast.net",
     "phone": "555-340-1230",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -19,7 +19,7 @@
     "lastName": "Johnson",
     "email": "mary.johnson@comcast.net",
     "phone": "555-123-4567",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -33,7 +33,7 @@
     "lastName": "Collins",
     "email": "bob.collins@yahoo.com",
     "phone": "555-012-3456",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -47,7 +47,7 @@
     "lastName": "Mayer",
     "email": "rebecca.mayer@gmail.com",
     "phone": "555-205-8212",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 1,
       "companyName": "Roga i Kopita",
@@ -61,7 +61,7 @@
     "lastName": "Clark",
     "email": "anthony.clark@gmail.com",
     "phone": "555-256-1901",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -75,7 +75,7 @@
     "lastName": "Sousa",
     "email": "judy.sousa@verizon.net",
     "phone": "555-751-1207",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -89,7 +89,7 @@
     "lastName": "Patriquin",
     "email": "patriquinc@yahoo.com",
     "phone": "555-316-1803",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -103,7 +103,7 @@
     "lastName": "Smith",
     "email": "debsmith@comcast.net",
     "phone": "555-256-3421",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",
@@ -117,7 +117,7 @@
     "lastName": "McGinn",
     "email": "jmcginn@comcast.net",
     "phone": "555-250-0918",
-    "customerDate": "1962-09-23T03:23:34.234+02:00",
+    "customerDate": "1962-09-23T03:23:34.234",
     "companyEntity": {
       "companyId": 2,
       "companyName": "Apple",

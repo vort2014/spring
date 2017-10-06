@@ -1,6 +1,7 @@
 package io.github.vort2014.spring.config;
 
 import com.zaxxer.hikari.HikariDataSource;
+import org.h2.jdbcx.JdbcDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -8,7 +9,8 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 
 import javax.sql.DataSource;
 
-import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.DERBY;
+import java.sql.SQLException;
+
 import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2;
 
 /**
@@ -33,14 +35,15 @@ public class DataSourceConfig {
      */
     // spring boot automatically loads schema.sql and data.sql files
     @Bean
-    public DataSource dataSource() {
-        return new EmbeddedDatabaseBuilder()
+    public DataSource dataSource() throws Exception {
+        DataSource dataSource = new EmbeddedDatabaseBuilder()
                 .setType(H2)
                 .setName("MODE=Oracle")
-                // see spring.datasource.initialize
-                .addScript("default_schema.sql")
+                .addScript("default_schema.sql") // see spring.datasource.initialize
                 .addScript("default_data.sql")
                 .build();
+//        org.h2.tools.Server.startWebServer(dataSource.getConnection());
+        return dataSource;
     }
 
     // file database that can be viewed

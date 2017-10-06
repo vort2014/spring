@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 
+import javax.annotation.PostConstruct;
+import java.util.TimeZone;
+
 /**
  * Created by vort on 09.07.2017.
  * We need to put this configuration in the root of project
@@ -13,6 +16,11 @@ import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 @SpringBootApplication  // same as @Configuration @EnableAutoConfiguration @ComponentScan @EnableJpaRepositories
 @EnableSpringConfigured // for injection context into AnnotationBeanConfigurerAspect
 public class Application {
+
+    @PostConstruct
+    private void setUp() {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+    }
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);

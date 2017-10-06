@@ -7,14 +7,11 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import java.time.OffsetDateTime;
-import java.util.Date;
+import java.time.Instant;
 
 @Entity
 @Table(name = "CUSTOMER")
@@ -32,7 +29,7 @@ public class CustomerEntity {
     @Column(name = "phone")
     private String phone;
     @Column(name = "customerDate")
-    private OffsetDateTime customerDate;
+    private Instant customerDate;
     @ManyToOne
     @JoinColumn(name = "companyId")
     private CompanyEntity companyEntity;
@@ -77,11 +74,11 @@ public class CustomerEntity {
         this.phone = phone;
     }
 
-    public OffsetDateTime getCustomerDate() {
+    public Instant getCustomerDate() {
         return customerDate;
     }
 
-    public void setCustomerDate(OffsetDateTime customerDate) {
+    public void setCustomerDate(Instant customerDate) {
         this.customerDate = customerDate;
     }
 
@@ -95,12 +92,12 @@ public class CustomerEntity {
 
     @Override
     public int hashCode() {
-        return HashCodeBuilder.reflectionHashCode(this, "customerId", "customerDate");
+        return HashCodeBuilder.reflectionHashCode(this);
     }
 
     @Override
     public boolean equals(Object obj) {
-        return EqualsBuilder.reflectionEquals(this, obj, "customerId", "customerDate");
+        return EqualsBuilder.reflectionEquals(this, obj);
     }
 
     @Override
